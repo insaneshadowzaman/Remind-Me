@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shovon2"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.akibtalcompany.remindme.AddTaskActivity">
+
+    <TextView
+        android:id="@+id/add_task_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Your Task"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/add_task_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Name :"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_weight=".1"
+            android:paddingRight="10dp"
+            />
+        <Spinner
+            android:id="@+id/spinner_HH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_weight="1"
+            android:entries="@array/Hour"
+            >
+
+        </Spinner>
+
+
+        <Spinner
+            android:drawSelectorOnTop="true"
+            android:id="@+id/spinner_MM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/Minitue"
+
+            >
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_ampm"
+            android:drawSelectorOnTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/AMPM"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="ADD"
+        android:layout_marginTop="20dp"
+
+        />
+
+</LinearLayout>

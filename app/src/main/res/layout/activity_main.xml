@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/shovon2"
+    tools:context="com.example.akibtalcompany.remindme.MainActivity">
+
+    <TextView
+        android:id="@+id/main_text_view"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind Me"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/main_add_task"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add your Task" />
+
+    <Button
+        android:id="@+id/main_delete_task"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:text="Update Task" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/main_option"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option" />
+
+</LinearLayout>
